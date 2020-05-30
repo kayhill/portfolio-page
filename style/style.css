@@ -52,8 +52,8 @@ table {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: blanchedalmond;
-    color: midnightblue;
+    background-color: rgba(250, 234, 211, 0.89);
+    color: rgb(23, 23, 65);
     font-size: 16px;
     position: relative;
 }
@@ -66,7 +66,6 @@ h1 {
 }
 
 h2 {
-    
     font-size: 2em;
 }
 
@@ -83,62 +82,137 @@ section {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .07em;
-    color: olivedrab;
+    color: rgb(23, 23, 65);
     margin: 10px;
 }
 
 
 /*Nav Bar */
-nav ul {
-    float: right;
+nav ul, nav img{
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     letter-spacing: .07em;
     text-transform: uppercase;
 }
 
-nav ul li {
-    float: left;
-    margin: 10px;
-}
-
 nav ul a {
     text-decoration: none;
-    color: olivedrab;
-}
-
-nav ul a:hover {
-    color: midnightblue;
-    text-decoration: none;
-    font-weight: bold;
+    color: rgb(23, 23, 65);
+    padding: 12px 16px;
+    display: block;
 }
 
 header {
     height: 60px;
-    background-color: blanchedalmond;
+    background-color: transparent;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+  
+ #menuicon {
+    height: 30px;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(245, 245, 245, 0.363);
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #ddd;
+      text-decoration: none;
+      color:rgb(23, 23, 65);
+    }
+    
+  
+  .show {
+      display:block;
+    }   
 
 
 /*Main*/ 
 #intro {
-    min-height: 350px;
-    max-height: 500px;
+    min-height: 400px;
+    max-height: 600px;
     background-image: url("../images/mountains.png");
+    background-repeat: no-repeat;
+    margin-top: -60px;
 }
 
-h1 span {
+span {
     font-weight: bold;
-    color: midnightblue;
+    color: rgb(23, 23, 65);
 }
 
 h1 {
-    margin: 20px 0 20px 0;
+  margin: 0px 0 10px 0;
 }
 
 .main h2 {
     color: whitesmoke;
-    background-color: rgba(245, 245, 245, 0.18);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
+.main {
+    margin: 100px 0px 40px 20px;
+    padding: 0 20px;
+    width: 95%;
+}
+
+.button {
+    display: none;
+}
+
+.button button {
+    border: none;
+    background-color: rgba(245, 245, 245, 0.404);
+    margin: 10px 0 0px 40px;
+    padding: 1.75em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    transition: font-weight, background-color .5s;
+}
+    
+.button a {
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button button:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+
 
 /*Projects*/
 
@@ -209,7 +283,7 @@ h1 {
 
 footer {
     padding: 30px;
-    background-color: olivedrab;
+    background-color: rgb(23, 23, 65);
     color: white;
     text-align: center;
     }
@@ -231,8 +305,17 @@ footer {
         width: 100%;
     }
 
-    .main h2 {
-        max-width: 60%;
+   .main {
+        width: 60%
+    }
+
+    #intro {
+        height: 650px;
+        background-size: cover;
+    }
+
+    .button {
+        display: inline-block;
     }
 }
 
