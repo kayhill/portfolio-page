@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
       
-    <!--Import Google Icon Font-->
+    <!--Import Google Fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Vibur&display=swap" rel="stylesheet">
           
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.css"  media="screen,projection"/>
@@ -22,122 +23,44 @@
 
   <body>
       <header>
-        <nav></nav>
+          <!-- Navigation Menu-->
+          <nav class="hide-on-large-only">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger trigger left"><i class="material-icons">menu</i></a>
+                <a href="#" class="center">
+                    <h1 class="name">Kayliegh Hill<br>
+                    <span>Web Developer</span>
+                    </h1>
+                </a>
+            </div>
+          </nav>
 
-        <ul id="slide-out" class="sidenav sidenav-fixed section table-of-contents">
-            <li class="logo">
-                <a id="logo-container" href="#" class="brand-logo teal-text">
-                    <h1>Kayliegh Hill
-                    <span class="indigo-text text-lighten-1">Web Developer</span>
+  
+        <ul id="slide-out" class="sidenav sidenav-fixed collapsible">
+            <div class="logo">
+            <li class="brand-logo center">
+                <a class="" href="#" class="brand-logo teal-text">
+                    <h1 class="indigo-text text-darken-4">Kayliegh Hill<br>
+                    <span class="indigo-text text-lighten-3">Web Developer</span>
                     </h1>
                 </a>
             </li>
-            <li class="bold"><a href="#about"><i class="material-icons small teal-text">face</i><span>About</span></a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#resume">Resume</a></li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              
-        
-   
+            </div>
+
+            <li><a class="sidenav-close waves-effect waves-teal" href="#about"><i class="material-icons small teal-text">face</i><span>About</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#projects"><i class="material-icons small purple-text">computer</i><span>Projects</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#education"><i class="material-icons small teal-text">school</i><span>Education</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#contact"><i class="material-icons small purple-text">textsms</i><span>Contact</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#resume"><i class="material-icons small teal-text">attach_file</i><span>Resume</span></a></li>
+        </ul>
       </header>
       <main>
+        <section id="intro" class="section scrollspy full-height">
+            <div class="container intro-textbox">
+                <h2>Hi, I'm Kayliegh.
+                <h4>I'm a Web Developer</h4>
 
-        <section id="intro">
-            <div class="container main">
-            <h1>Hi, I'm <span>Kayliegh</span></h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                facilisis magna etiam tempor.</h2>
             </div>
-            <div class="largescreen button">
-                <button><a href="#about">
-                    About
-                </a></button>
-            </div>
-
-            <div class="largescreen button">
-                <button><a href="#projects">
-                    Projects </a>
-                </button>
-            </div>
-
-            <div class="largescreen button"><button>
-                <a href="#contact">
-                    Contact </a>
-                </button>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class= "container projects">
-            <div class="container section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="container" id="project-display">
-
-                <div class = "container project">
-                    <h3>Skyline Appraisal Website</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/FullSizeRender.jpg" alt="">
-                </div>
-
-                <div class = "container project">
-                    <h3>Sweet Joy's</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/full-day-in-playa-blanca.jpg" alt="">
-                </div>
-
-                <div class = "container project">
-                    <h3>Stock Options</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/cartagena.jpg" alt="">
-                </div>
-            </div>
-            </div>
-        
-        </section>
-
-        <section id="about">
-            <div class="container profile_card">
-                <div class="container section-title">
-                <h2>About Me</h2>
-                </div>
-                
-                <img id="profile-img" src="./images/kayliegh_profile_pic.png" alt="profile photo of Kayliegh">
-                <p id="bio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Quis risus sed vulputate odio ut 
-                    enim blandit volutpat. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Vestibulum morbi blandit cursus 
-                    risus at ultrices mi. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Potenti nullam ac tortor vitae 
-                    purus faucibus ornare.</p>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container contact-box">
-                <div class="container section-title">
-                <h2>Let's Talk</h2>
-                </div>
-
-                
-                <p>Porttitor massa id neque aliquam. Pellentesque habitant morbi tristique senectus et.</p>
-                <ul>
-                    <li><span class="contact-method">Phone</span> 8885550101</span></li>
-                    <li><span class="contact-method">Email</span> hello@kayliegh.io</li>
-                    <li><span class="contact-method">LinkedIn</span> bizness</li>
-                </ul>
-                </div>
-            </div>
-
         </section>
       </main>
       <footer>
