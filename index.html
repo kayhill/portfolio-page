@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
       
-    <!--Import Google Fonts-->
+    <!--Import Icons & Fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Vibur&display=swap" rel="stylesheet">
-          
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.css"  media="screen,projection"/>
 
@@ -14,9 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <link rel="stylesheet" href="./style/style.css">
-    <title>Kayliegh Hill || Front End Web Developer</title>
-    <meta name="description" content="Front End Web App Developer || Kayliegh Hill">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Web Developer, Website">
+
+    <title>Kayliegh Hill || Web Developer</title>
+    <meta name="description" content="Web App Developer || Kayliegh Hill">
+    <meta name="keywords" content="HTML, CSS, Python, Web Development, Web Developer, Website">
     <meta name="author" content="Kayliegh">
 
   </head>
@@ -24,24 +27,26 @@
   <body>
       <header>
           <!-- Navigation Menu-->
-          <nav class="hide-on-large-only">
-            <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger trigger left"><i class="material-icons">menu</i></a>
+          <div class="navbar-fixed z-depth-3 hide-on-large-only">
+            <nav class="white">
+              <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger trigger left teal-text"><i class="material-icons">menu</i></a>
                 <a href="#" class="center">
-                    <h1 class="name">Kayliegh Hill<br>
-                    <span>Web Developer</span>
+                    <h1 class="name teal-text">Kayliegh Hill<br>
+                    <span class="grey-text">Web Developer</span>
                     </h1>
                 </a>
-            </div>
-          </nav>
+              </div>
+            </nav>
+          </div>
 
   
         <ul id="slide-out" class="sidenav sidenav-fixed collapsible">
-            <div class="logo">
+            <div class="logo white">
             <li class="brand-logo center">
-                <a class="" href="#" class="brand-logo teal-text">
-                    <h1 class="indigo-text text-darken-4">Kayliegh Hill<br>
-                    <span class="indigo-text text-lighten-3">Web Developer</span>
+                <a class="" href="#" class="brand-logo">
+                    <h1 class="teal-text">Kayliegh Hill<br>
+                    <span class="grey-text">Web Developer</span>
                     </h1>
                 </a>
             </li>
@@ -49,20 +54,23 @@
 
             <li><a class="sidenav-close waves-effect waves-teal" href="#about"><i class="material-icons small teal-text">face</i><span>About</span></a></li>
             <li><a class="sidenav-close waves-effect waves-teal" href="#projects"><i class="material-icons small purple-text">computer</i><span>Projects</span></a></li>
-            <li><a class="sidenav-close waves-effect waves-teal" href="#education"><i class="material-icons small teal-text">school</i><span>Education</span></a></li>
-            <li><a class="sidenav-close waves-effect waves-teal" href="#contact"><i class="material-icons small purple-text">textsms</i><span>Contact</span></a></li>
-            <li><a class="sidenav-close waves-effect waves-teal" href="#resume"><i class="material-icons small teal-text">attach_file</i><span>Resume</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#education"><i class="material-icons small deep-orange-text text-accent-2">school</i><span>Education</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#skills"><i class="material-icons small cyan-text">lightbulb_outline</i><span>Skills</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#contact"><i class="material-icons small pink-text">textsms</i><span>Contact</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" target="_blank" href="https://docs.google.com/document/d/1FD_czscrzghM6PAutPC-2Om4Br-_PitNqqU9I0Wy5GY/edit?usp=sharing">
+                <i class="material-icons small indigo-text">attach_file</i><span>Resume</span></a></li>
         </ul>
       </header>
       <main>
         <section id="intro" class="section scrollspy full-height">
             <div class="container intro-textbox">
-                <h2>Hi, I'm Kayliegh.
-                <h4>I'm a Web Developer</h4>
+                <h2 class="hide-on-med-and-down">Hey, I'm Kayliegh <i aria-role="presentation" aria-label="wave" class="fa fa-hand-peace-o"></i></h2>
+                    <h3>Let's build something <span class="teal-text text-darken-1">together.</span></h3>
+                
             </div>
         </section>
         <section id="about" class="section scrollspy">
-            <h3 class="page-title teal lighten-3">About Me</h3>
+            <h3 class="page-title teal lighten-2">About Me</h3>
             <div class="container flow-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua. Quam adipiscing vitae proin sagittis nisl rhoncus. 
@@ -78,7 +86,7 @@
             </div>            
         </section>
         <section id="projects" class="section scrollspy">
-            <h3 class="page-title teal lighten-3">Projects</h3>
+            <h3 class="page-title teal lighten-2">Projects</h3>
             <div class="container">
                 <div class="row">
                     <!--FormFill-->
@@ -90,18 +98,21 @@
                             <div class="card-content">
                                 <span class="activator card-title">
                                     FormFill Web App 
+                                   <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>Batch fill PDF forms with your data</p>
                             </div>
                             <div class="card-reveal" style="transform: translateY(-100%);">
                                 <div class="card-content">
                                     <span class="card-title">
-                                        Build Tools
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
                                     </span>
                                     <ul>
                                         <li>Python, SQL</li>
                                         <li>Flask, PostgreSQL</li>
                                         <li>Heroku</li>
+                                        <li>AWS 3 Storage</li>
                                     </ul>
                                 </div>
                                 <div class="card-action">
@@ -111,9 +122,7 @@
                             </div>
                         </div>
                     </div>
-
                     <!--Skyline Appraisal-->
-                    
                     <div class="col s12 m6 14">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-light">
@@ -122,13 +131,15 @@
                             <div class="card-content">
                                 <span class="activator card-title">
                                     Skyline Appraisal Website
+                                    <i class="material-icons right">more_vert</i>
                                 </span>
-                                <p>Static website designed and built for local business.</p>
+                                <p>Responsive website designed and built for local business.</p>
                             </div>
                             <div class="card-reveal" style="transform: translateY(-100%);">
                                 <div class="card-content">
                                     <span class="card-title">
-                                        Build Tools
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
                                     </span>
                                     <ul>
                                         <li>HTML</li>
@@ -143,9 +154,7 @@
                             </div>
                         </div>
                     </div>
-
                     <!--Finance-->
-                    
                     <div class="col s12 m6 14">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-light">
@@ -154,13 +163,15 @@
                             <div class="card-content">
                                 <span class="activator card-title">
                                     Finance Project
+                                    <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>Dynamic website built as class project that allows users to buy and sell stocks.</p>
                             </div>
                             <div class="card-reveal" style="transform: translateY(-100%);">
                                 <div class="card-content">
                                     <span class="card-title">
-                                        Build Tools
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
                                     </span>
                                     <ul>
                                         <li>SQLite</li>
@@ -179,12 +190,140 @@
 
             </div>
         </section>
+        <section id="education" class="section scrollspy">
+            <h3 class="page-title teal lighten-3">Education</h3>
+            <div class="container">
+                <div class="row">
+                    <!--WashU-->
+                    <div class="col s12 m6 14">
+                        <div class="card small">
+                            <div class="card-image school-logo">
+                                <img alt="WUSTL official school logo" src="./images/2linehrzpos(RGB)200-01.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Bachelor's Degree
+                                </span>                            
+                                <p>Latin American Studies</p>                        
+                                <p>St. Louis, MO, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UAH-->
+                    <div class="col s12 m6 14">
+                        <div class="card small">
+                            <div class="card-image school-logo">
+                                <img alt="UAH official school logo" src="./images/UAH_Logo.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Master's Degree
+                                </span>
+                                <p>Teaching English as a Second Language</p>                        
+                                <p>Madrid, Spain</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </section>
+        <section id="skills" class="section scrollspy full-height">
+            <h3 class="page-title teal lighten-3">Skills</h3>
+            <div class="container">
+                <div class="section">
+                    <h4>Front-End</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
+                </div>
 
-      </main>
-      <footer>
-          <p>Website by Kayliegh</p>
-          <p> &copy; 2020</p>
-      </footer>
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h4>Back-End</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h4>Other</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
+                </div>
+
+            </div>
+            </div>
+                    
+        </section>
+
+        
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title teal lighten-2">Contact</h3>
+            <div class="container">
+                <p>
+                    <a href="mailto:kayliegh.hill@gmail.com" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="material-icons small text-white">mail</i></a>
+                    <a href="mailto:kayliegh.hill@gmail.com" target="_blank"><span>kayliegh.hill@gmail.com</span></a>
+                </p>
+
+                <p>
+                    <a href="github.com/kayhill" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-github text-white"></i></a>
+                    <a href="github.com/kayhill" target="_blank"><span>github.com/kayhill</span></a>
+                </p>
+
+                <p>
+                    <a href="twitter.com" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-twitter text-white"></i></a>
+                    <a href="twitter.com" target="_blank"><span>Twitter handle</span></a>
+                </p>
+
+                <p>
+                    <a href="linked-in" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-linkedin white-text"></i></a>
+                    <a href="linked in" target="_blank"><span>Linked In // kayliegh</span></a>
+                </p>
+            </div>            
+        </section>  
+
+
+        </main>
+        <footer class="page-footer deep-orange lighten-2">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Thanks for Visiting</h5>
+                  <p class="grey-text text-lighten-4">I'm excited to blargh a blargh the blargh and the clock in the kitchen</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#about">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#education">Education</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#resume">Resume</a></li>
+                    <li><a class="grey-text text-lighten-3" href="wwww.github.com/kayhill">View this site on GitHub</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container hide-on-large-only">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger trigger left">
+                        <i class="material-icons text-white">menu</i></a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger trigger left">
+                        <span class="text-white">View Menu</span>
+                    </a>
+                </div>
+            </div>
+            
+        </footer>
 
        <!--JavaScript at end of body for optimized loading-->
        <script type="text/javascript" src="./materialize/js/materialize.js"></script>
