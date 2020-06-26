@@ -115,13 +115,19 @@ li.brand-logo {
 
 .school-logo img {
   margin: 20px 0px 0px;
-  max-height: 85px;
+  max-height: 100px;
 }
 
 /*Skills*/
 
 .skills-pics img {
   max-height: 100px;
+  max-width: 150px;
+  margin-right: 30px;
+}
+
+#skills .section {
+  margin: 50px 0px;
 }
 /*Contact*/
 #contact p {
