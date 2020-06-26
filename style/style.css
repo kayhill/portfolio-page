@@ -1,321 +1,154 @@
 
-/* CSS Reset from
- http://meyerweb.com/eric/tools/css/reset/ 
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* End CSS reset, begin styles*/
 
 /*Global Styles*/
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgba(250, 234, 211, 0.89);
-    color: rgb(23, 23, 65);
-    font-size: 16px;
-    position: relative;
-}
-html, body {
-    margin: 0 0;
-}
-h1 {
-    color: whitesmoke;
-    font-size: 2.5em;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-    font-size: 2em;
+
+header, main, footer {
+    padding-left: 200px;
 }
 
-h3 {
-    font-size: 1.5em;
+
+.section {
+  padding: 0px;
 }
 
-section {
-    margin-bottom: 10px;
-    padding: 30px 0px;
+h1, h2 {
+  margin: 0px 0px;
+  padding: 0px 0px;
 }
 
-.section-title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .07em;
-    color: rgb(23, 23, 65);
-    margin: 10px;
+.full-height {
+  height: 100vh;
 }
 
+.card-title, #skills h4 {
+  color: rgb(49, 27, 94)
+}
 
 /*Nav Bar */
-nav ul, nav img{
-    margin: 10px;
-    font-size: 1.2em;
-    letter-spacing: .07em;
-    text-transform: uppercase;
+
+nav {
+  height: 80px;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: rgb(23, 23, 65);
-    padding: 12px 16px;
-    display: block;
+li.brand-logo {
+  padding: 20px 10px 30px;
 }
 
-header {
-    height: 60px;
-    background-color: transparent;
+.logo h1, .name {
+  font-size: 26px;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    padding: 16px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-  }
-  
- #menuicon {
-    height: 30px;
-  }
-
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: rgba(245, 245, 245, 0.363);
-    
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-}
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: #ddd;
-      text-decoration: none;
-      color:rgb(23, 23, 65);
-    }
-    
-  
-  .show {
-      display:block;
-    }   
-
-
-/*Main*/ 
-#intro {
-    min-height: 400px;
-    max-height: 600px;
-    background-image: url("../images/mountains.png");
-    background-repeat: no-repeat;
-    margin-top: -60px;
+.logo h1 span, .name span {
+  font-size: 16px;
 }
 
-span {
-    font-weight: bold;
-    color: rgb(23, 23, 65);
+.name {
+  padding: 10px 0;
 }
 
-h1 {
-  margin: 0px 0 10px 0;
+.logo {
+  min-height: 130px;
+  box-sizing: content-box;
+  border-bottom-color: lightcoral;
+  border-bottom-style: solid;
+  background-color: whitesmoke;
 }
 
-.main h2 {
-    color: whitesmoke;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+.sidenav-fixed {
+  width: 200px;
+  padding-top: 0;
 }
-.main {
-    margin: 100px 0px 40px 20px;
-    padding: 0 20px;
-    width: 95%;
-}
-
-.button {
-    display: none;
-}
-
-.button button {
-    border: none;
-    background-color: rgba(245, 245, 245, 0.404);
-    margin: 10px 0 0px 40px;
-    padding: 1.75em;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    transition: font-weight, background-color .5s;
-}
-    
-.button a {
-    color: whitesmoke;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    font-size: 1.5em;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.button button:hover {
-    background-color: #ddd;
-    font-weight: bold;
+/* Main Sections */
+.page-title {
+  color: white;
+  text-transform: uppercase;
+  padding-left: 30px;
 }
 
 
-
-/*Projects*/
-
-.projects {
-    text-align: center;
+/* Intro */
+#intro.section {
+  background: url(../images/blueridge.jpg) no-repeat top center/cover;
+  position: relative;
+}
+#intro.section .container {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
-.project {
-    float: left;
-    margin: 10px;
-    text-align: center;
-    width: 95%;
-    
-}
-
-.project img {
-    margin: 20px 0;
-    height: 200px;
-    
+.intro-textbox h2 {
+  margin: 20px 0 0 20px;
+  text-shadow: 1px 2px rgba(128, 128, 128, .301);
  }
 
- /*About*/
-
- #about {
-    min-height: 400px;
+ .intro-textbox h3 {
+  margin: 30px 0 0 20px;
+  text-shadow: 1px 2px rgba(128, 128, 128, 0.301);
  }
 
- .profile_card {
-    text-align: center;
- }
- #profile-img {
-    margin: 0 0;
-    height: 200px;     
- }
+.intro-textbox h3 span {
+  text-shadow: white;
+ 
+}
 
 
- #bio {
-    margin: 0 0;
-    padding: 20px;
-    width: 95%;
-    text-align: center;
- }
 
+/*About Me*/
+#about.section h3 {
+  margin-top: 0px;
+}
+
+/*Education*/
+.school-logo {
+  margin: 30px 10px;
+  width: 60%;
+}
+
+.school-logo img {
+  margin: 20px 0px 0px;
+  max-height: 85px;
+}
+
+/*Skills*/
+
+.skills-pics img {
+  max-height: 100px;
+}
 /*Contact*/
-
-
-
-.contact-box {
-    text-align: center;
-    }
-
-#contact ul {
-    display: inline;
+#contact p {
+  margin-bottom: 30px;
 }
 
-#contact li {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+#contact h3 {
+  margin-bottom: 50px;
 }
-.contact-method {
-    text-transform: uppercase;
-    color: midnightblue;
-    font-weight: bold;
+#contact p span {
+  margin-left: 20px;
 }
 
-/*Footer*/
+/* Footer */
+.footer-copyright a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
 
-footer {
-    padding: 30px;
-    background-color: rgb(23, 23, 65);
-    color: white;
-    text-align: center;
-    }
-
-
-
+.footer-copyright a span {
+  margin-left: 10px;
+}
 /*Responsive -- Scale UP*/
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #project-display {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #bio {
-        float: none;
-        width: 100%;
-    }
-
-   .main {
-        width: 60%
-    }
-
-    #intro {
-        height: 650px;
-        background-size: cover;
-    }
-
-    .button {
-        display: inline-block;
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
     }
 }
-

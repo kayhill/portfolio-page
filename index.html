@@ -2,134 +2,331 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!--Import Icons & Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Vibur&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
-    <title>Kayliegh Hill -- Freelance Web Developer</title>
-    <meta name="description" content="I'm a freelance webdeveloper here to help you make the web application or web site of your dreams.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Web Developer, Website">
-    <meta name="author" content="Kayliegh Hill">
+
+    <title>Kayliegh Hill || Web Developer</title>
+    <meta name="description" content="Web App Developer || Kayliegh Hill">
+    <meta name="keywords" content="HTML, CSS, Python, Web Development, Web Developer, Website">
+    <meta name="author" content="Kayliegh">
+
   </head>
+
   <body>
       <header>
-        <nav>
-        <div class="dropdown">
-
-            <img onclick="navdrop()" id="menuicon" src="./images/iconfinder_menu-lines-list_2931181.png" alt="MENU" class="dropbtn">
-            <div id="myDropdown" class="dropdown-content">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-            </div>
+          <!-- Navigation Menu-->
+          <div class="navbar-fixed z-depth-3 hide-on-large-only">
+            <nav class="white">
+              <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger trigger left teal-text"><i class="material-icons">menu</i></a>
+                <a href="#" class="center">
+                    <h1 class="name teal-text">Kayliegh Hill<br>
+                    <span class="grey-text">Web Developer</span>
+                    </h1>
+                </a>
+              </div>
+            </nav>
           </div>
-        </nav>
-        
-   
+
+  
+        <ul id="slide-out" class="sidenav sidenav-fixed collapsible">
+            <div class="logo white">
+            <li class="brand-logo center">
+                <a class="" href="#" class="brand-logo">
+                    <h1 class="teal-text">Kayliegh Hill<br>
+                    <span class="grey-text">Web Developer</span>
+                    </h1>
+                </a>
+            </li>
+            </div>
+
+            <li><a class="sidenav-close waves-effect waves-teal" href="#about"><i class="material-icons small teal-text">face</i><span>About</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#projects"><i class="material-icons small purple-text">computer</i><span>Projects</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#education"><i class="material-icons small deep-orange-text text-accent-2">school</i><span>Education</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#skills"><i class="material-icons small cyan-text">lightbulb_outline</i><span>Skills</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" href="#contact"><i class="material-icons small pink-text">textsms</i><span>Contact</span></a></li>
+            <li><a class="sidenav-close waves-effect waves-teal" target="_blank" href="https://docs.google.com/document/d/1FD_czscrzghM6PAutPC-2Om4Br-_PitNqqU9I0Wy5GY/edit?usp=sharing">
+                <i class="material-icons small indigo-text">attach_file</i><span>Resume</span></a></li>
+        </ul>
       </header>
       <main>
-
-        <section id="intro">
-            <div class="container main">
-            <h1>Hi, I'm <span>Kayliegh</span></h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                facilisis magna etiam tempor.</h2>
-            </div>
-            <div class="largescreen button">
-                <button><a href="#about">
-                    About
-                </a></button>
-            </div>
-
-            <div class="largescreen button">
-                <button><a href="#projects">
-                    Projects </a>
-                </button>
-            </div>
-
-            <div class="largescreen button"><button>
-                <a href="#contact">
-                    Contact </a>
-                </button>
+        <section id="intro" class="section scrollspy full-height">
+            <div class="container intro-textbox">
+                <h2 class="hide-on-med-and-down">Hey, I'm Kayliegh <i aria-role="presentation" aria-label="wave" class="fa fa-hand-peace-o"></i></h2>
+                    <h3>Let's build something <span class="teal-text text-darken-1">together.</span></h3>
+                
             </div>
         </section>
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title teal lighten-2">About Me</h3>
+            <div class="container flow-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Quam adipiscing vitae proin sagittis nisl rhoncus. 
+                    Habitant morbi tristique senectus et netus et. Interdum consectetur libero id faucibus 
+                    nisl tincidunt. Ultrices sagittis orci a scelerisque purus semper eget duis. Nulla facilisi
+                    ras fermentum odio eu feugiat. </p>
+                <p>Eget duis at tellus at urna condimentum. Quam viverra orci 
+                    sagittis eu volutpat odio facilisis mauris. Magna eget est lorem ipsum. Lorem ipsum dolor 
+                    sit amet consectetur. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
+                    quam id diam maecenas ultricies mi. Ipsum faucibus vitae aliquet nec ullamcorper sit. 
+                    Duis tristique sollicitudin nibh sit amet. Amet luctus venenatis lectus magna fringilla 
+                    urna porttitor rhoncus dolor.</p>
+            </div>            
+        </section>
+        <section id="projects" class="section scrollspy">
+            <h3 class="page-title teal lighten-2">Projects</h3>
+            <div class="container">
+                <div class="row">
+                    <!--FormFill-->
+                    <div class="col s12 m6 14">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-light">
+                                <img alt="Screenshot of FormFill web app" src="./images/mountains.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    FormFill Web App 
+                                   <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>Batch fill PDF forms with your data</p>
+                            </div>
+                            <div class="card-reveal" style="transform: translateY(-100%);">
+                                <div class="card-content">
+                                    <span class="card-title">
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Python, SQL</li>
+                                        <li>Flask, PostgreSQL</li>
+                                        <li>Heroku</li>
+                                        <li>AWS 3 Storage</li>
+                                    </ul>
+                                </div>
+                                <div class="card-action">
+                                    <a href="www.gmail.com" target="blank" class="btn-large btn-floating waves-effect waves-light teal"><i class="material-icons small text-white">launch</i></a>
+                                    <a href="www.github.com" target="blank" class="btn-large btn-floating waves-effect waves-light teal"><i class="material-icons small text-white">code</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skyline Appraisal-->
+                    <div class="col s12 m6 14">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-light">
+                                <img alt="Screenshot of Skyline Appraisal Webpage" src="./images/mountains.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Skyline Appraisal Website
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>Responsive website designed and built for local business.</p>
+                            </div>
+                            <div class="card-reveal" style="transform: translateY(-100%);">
+                                <div class="card-content">
+                                    <span class="card-title">
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Netlify</li>
+                                    </ul>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://www.skylineappraisalwnc.com" target="blank" class="btn-large btn-floating waves-effect waves-light teal"><i class="material-icons small text-white">launch</i></a>
+                                    <a href="www.github.com" target="blank" class="btn-large btn-floating waves-effect waves-light teal"><i class="material-icons small text-white">code</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Finance-->
+                    <div class="col s12 m6 14">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-light">
+                                <img alt="Screenshot of CS50 Finance" src="./images/mountains.png" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Finance Project
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>Dynamic website built as class project that allows users to buy and sell stocks.</p>
+                            </div>
+                            <div class="card-reveal" style="transform: translateY(-100%);">
+                                <div class="card-content">
+                                    <span class="card-title">
+                                        Tech Used
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>SQLite</li>
+                                        <li>Python using Flask</li>
+                                        <li>IEX Cloud API</li>
+                                    </ul>
+                                </div>
+                                <div class="card-action">    
+                                    <a href="www.github.com" target="blank" class="btn-large btn-floating waves-effect waves-light teal"><i class="material-icons small text-white">code</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <section id="projects">
-            <div class= "container projects">
-            <div class="container section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="container" id="project-display">
-
-                <div class = "container project">
-                    <h3>Skyline Appraisal Website</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/FullSizeRender.jpg" alt="">
                 </div>
 
-                <div class = "container project">
-                    <h3>Sweet Joy's</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/full-day-in-playa-blanca.jpg" alt="">
+            </div>
+        </section>
+        <section id="education" class="section scrollspy">
+            <h3 class="page-title teal lighten-3">Education</h3>
+            <div class="container">
+                <div class="row">
+                    <!--WashU-->
+                    <div class="col s12 m6 14">
+                        <div class="card small">
+                            <div class="card-image school-logo">
+                                <img alt="WUSTL official school logo" src="./images/2linehrzpos(RGB)200-01.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Bachelor's Degree
+                                </span>                            
+                                <p>Latin American Studies</p>                        
+                                <p>St. Louis, MO, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UAH-->
+                    <div class="col s12 m6 14">
+                        <div class="card small">
+                            <div class="card-image school-logo">
+                                <img alt="UAH official school logo" src="./images/UAH_Logo.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="activator card-title">
+                                    Master's Degree
+                                </span>
+                                <p>Teaching English as a Second Language</p>                        
+                                <p>Madrid, Spain</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </section>
+        <section id="skills" class="section scrollspy full-height">
+            <h3 class="page-title teal lighten-3">Skills</h3>
+            <div class="container">
+                <div class="section">
+                    <h4>Front-End</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
                 </div>
 
-                <div class = "container project">
-                    <h3>Stock Options</h3>
-                    <p> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and 
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and 
-                        trouble that are bound to ensue; </p>
-                    <img src="./images/cartagena.jpg" alt="">
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h4>Back-End</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
                 </div>
+
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h4>Other</h4>
+                    <div class="skills-pics">
+                        <img alt="" src="images/blueridge.jpg">
+                        <img alt="" src="images/mountains.png">
+                    </div>                    
+                </div>
+
             </div>
             </div>
+                    
+        </section>
+
         
-        </section>
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title teal lighten-2">Contact</h3>
+            <div class="container">
+                <p>
+                    <a href="mailto:kayliegh.hill@gmail.com" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="material-icons small text-white">mail</i></a>
+                    <a href="mailto:kayliegh.hill@gmail.com" target="_blank"><span>kayliegh.hill@gmail.com</span></a>
+                </p>
 
-        <section id="about">
-            <div class="container profile_card">
-                <div class="container section-title">
-                <h2>About Me</h2>
+                <p>
+                    <a href="github.com/kayhill" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-github text-white"></i></a>
+                    <a href="github.com/kayhill" target="_blank"><span>github.com/kayhill</span></a>
+                </p>
+
+                <p>
+                    <a href="twitter.com" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-twitter text-white"></i></a>
+                    <a href="twitter.com" target="_blank"><span>Twitter handle</span></a>
+                </p>
+
+                <p>
+                    <a href="linked-in" target="_blank" class="btn-large btn-floating waves-effect waves-light deep-purple darken-4">
+                        <i class="fa fa-linkedin white-text"></i></a>
+                    <a href="linked in" target="_blank"><span>Linked In // kayliegh</span></a>
+                </p>
+            </div>            
+        </section>  
+
+
+        </main>
+        <footer class="page-footer deep-orange lighten-2">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Thanks for Visiting</h5>
+                  <p class="grey-text text-lighten-4">I'm excited to blargh a blargh the blargh and the clock in the kitchen</p>
                 </div>
-                
-                <img id="profile-img" src="./images/kayliegh_profile_pic.png" alt="profile photo of Kayliegh">
-                <p id="bio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Quis risus sed vulputate odio ut 
-                    enim blandit volutpat. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Vestibulum morbi blandit cursus 
-                    risus at ultrices mi. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Potenti nullam ac tortor vitae 
-                    purus faucibus ornare.</p>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#about">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#education">Education</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#resume">Resume</a></li>
+                    <li><a class="grey-text text-lighten-3" href="wwww.github.com/kayhill">View this site on GitHub</a></li>
+                  </ul>
                 </div>
-                
+              </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <div class="container contact-box">
-                <div class="container section-title">
-                <h2>Let's Talk</h2>
-                </div>
-
-                
-                <p>Porttitor massa id neque aliquam. Pellentesque habitant morbi tristique senectus et.</p>
-                <ul>
-                    <li><span class="contact-method">Phone</span> 8885550101</span></li>
-                    <li><span class="contact-method">Email</span> hello@kayliegh.io</li>
-                    <li><span class="contact-method">LinkedIn</span> bizness</li>
-                </ul>
+            <div class="footer-copyright">
+                <div class="container hide-on-large-only">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger trigger left">
+                        <i class="material-icons text-white">menu</i></a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger trigger left">
+                        <span class="text-white">View Menu</span>
+                    </a>
                 </div>
             </div>
+            
+        </footer>
 
-        </section>
-      </main>
-      <footer>
-          <p>Website by Kayliegh</p>
-          <p> &copy; 2020</p>
-      </footer>
+       <!--JavaScript at end of body for optimized loading-->
+       <script type="text/javascript" src="./materialize/js/materialize.js"></script>
+       <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>
