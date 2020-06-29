@@ -7,11 +7,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 header, main, footer {
     padding-left: 200px;
 }
-
 
 .section {
   padding: 0px;
@@ -30,6 +28,9 @@ h1, h2 {
   color: rgb(49, 27, 94)
 }
 
+a.active {
+  background-color: rgba(49, 27, 94, 0.144);
+}
 /*Nav Bar */
 
 nav {
