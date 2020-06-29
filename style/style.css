@@ -110,8 +110,8 @@ li.brand-logo {
 
 /*Education*/
 .school-logo {
-  margin: 30px 10px;
-  width: 60%;
+  margin: 30px 10px 0 10px;
+  max-width: 80%;
 }
 
 .school-logo img {
@@ -125,6 +125,7 @@ li.brand-logo {
   max-height: 100px;
   max-width: 150px;
   margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 #skills .section {
